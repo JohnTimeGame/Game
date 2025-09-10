@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cry2ip1ehua6t"]
+
+[ext_resource type="Script" uid="uid://c8b1yoshd6pvl" path="res://BladeFunctionality.gd" id="1_x5cpr"]
+
+[node name="Crossguard" type="Node3D"]
+script = ExtResource("1_x5cpr")

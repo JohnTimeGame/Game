@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://c35nnpkp5bgkw"]
+
+[ext_resource type="PackedScene" uid="uid://busmn8xi3c3vd" path="res://SwordParts/sword.tscn" id="1_f2n5h"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ua7g0"]
+sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+ground_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+
+[sub_resource type="Sky" id="Sky_j3tis"]
+sky_material = SubResource("ProceduralSkyMaterial_ua7g0")
+
+[sub_resource type="Environment" id="Environment_dudet"]
+background_mode = 2
+sky = SubResource("Sky_j3tis")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="TestingEnv" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_dudet")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.862615, -0.504726, -0.0338521, -0.0820332, 0.0735389, 0.993913, -0.499165, 0.860141, -0.10484, 0, 3.70631, 0)
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.23938, 1.35874)
+
+[node name="Sword" parent="." instance=ExtResource("1_f2n5h")]

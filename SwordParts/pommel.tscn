@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cy4vf82a05iy"]
+
+[ext_resource type="Script" uid="uid://c8b1yoshd6pvl" path="res://BladeFunctionality.gd" id="1_twqgn"]
+
+[node name="Pommel" type="Node3D"]
+script = ExtResource("1_twqgn")

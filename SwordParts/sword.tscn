@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://busmn8xi3c3vd"]
+
+[ext_resource type="PackedScene" uid="uid://decfpw3kw8k7s" path="res://SwordParts/Blades/Blade.tscn" id="4_4y3ih"]
+[ext_resource type="Script" uid="uid://bg747ryu56ejf" path="res://SwordParts/sword_creation_manager.gd" id="10_s7cj6"]
+
+[node name="Sword" type="Node3D"]
+
+[node name="SwordCreationManager" type="Node" parent="."]
+script = ExtResource("10_s7cj6")
+part = ExtResource("4_4y3ih")

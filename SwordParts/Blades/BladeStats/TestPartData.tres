@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PartStats" load_steps=3 format=3 uid="uid://dn6a28cbvkef8"]
+
+[ext_resource type="Script" uid="uid://b1mrmrad0bag8" path="res://SwordParts/Blades/BladeStats/BladeResrources.gd" id="1_uxo8c"]
+[ext_resource type="ArrayMesh" uid="uid://cmgqvi8k4xgyp" path="res://SwordParts/Blades/BladeModels/ItalianBladeMesh.res" id="1_v8m53"]
+
+[resource]
+script = ExtResource("1_uxo8c")
+SwordPartType = 0
+PartMesh = ExtResource("1_v8m53")
+metadata/_custom_type_script = "uid://b1mrmrad0bag8"
